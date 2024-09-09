@@ -9,3 +9,8 @@ menambah depedency orang lain dgn perintah `go get <namaModule>`
 untuk upgrade versi module itu cukup tambahkan tag git baru
 untuk upgrade versi depedency yang digunakan itu cukup edit versi depedency nya di file `go.mod`
 terus kalo sudah tinggal jalankan ulang `go get` lagi
+
+jika terjadi major changes di module kita itu sebisa mungkin kita tidak mengubah struktur yang sudah dibuat
+secara total, kalo emang udah gabisa di maintenance lagi module nya lebih baik membuat module baru dengan
+nama dan struktur kode yang baru. Biasanya penamaannya identik dengan v2,v3, dll di akhir module nya
+misal github.com/abdu/go-modules menjadi github.com/abdu/go-modules/v2
