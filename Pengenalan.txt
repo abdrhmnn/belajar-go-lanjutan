@@ -1,0 +1,5 @@
+go-modules adalah depedency management seperti npm, composer, gradle, dll
+
+bisa di mulai untuk membuat module dengan `go mod init <namaModule>
+
+untuk publish/release go-modules kita itu cukup pakai tag dengan menggunakan `git tag` saja
