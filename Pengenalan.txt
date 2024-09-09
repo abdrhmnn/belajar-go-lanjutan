@@ -3,3 +3,9 @@ go-modules adalah depedency management seperti npm, composer, gradle, dll
 bisa di mulai untuk membuat module dengan `go mod init <namaModule>
 
 untuk publish/release go-modules kita itu cukup pakai tag dengan menggunakan `git tag` saja
+
+menambah depedency orang lain dgn perintah `go get <namaModule>`
+
+untuk upgrade versi module itu cukup tambahkan tag git baru
+untuk upgrade versi depedency yang digunakan itu cukup edit versi depedency nya di file `go.mod`
+terus kalo sudah tinggal jalankan ulang `go get` lagi

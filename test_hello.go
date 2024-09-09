@@ -1,5 +1,12 @@
-package belajargolanjutan
+package main
+
+import "github.com/go-playground/log/v8"
 
 func SayHello() string {
-	return "ok"
+	return "test"
+}
+
+func main() {
+	log.Info("Testing")
+	log.Alert("Okayy")
 }
