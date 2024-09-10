@@ -1,0 +1,17 @@
+Dalam parallel programming itu ada yang namanya 
+Proses -> sebuah eksekusi program seperti menjalankan google chrome, spotify, ms office, dll
+Thread -> sebuah segmen/bagian dari program, seperti ketika menjalankan google chrome itu kita buka banyak tab
+nah setiap satu tab itu berjalan di 1 thread atau sama aja satu tab sama dengan satu thread
+
+Proses -> konsumsi memory besar, terisolasi dengan proses lain, proses lama untuk dijalankan dan dihentikan
+Thread -> konsumsi memory kecil, bisa saling berhubungan jika dalam proses yang sama, cepat untuk dijalankan
+dan dihentikan
+
+Berbeda dengan concurrency programming, adalah menjalankan beberapa pekerjaan secara bergantian tetapi
+tidak bisa di waktu yang sama, dalam concurrency itu membutuhkan sedikit thread
+
+di go-lang itu default nya adalah menjalankan program secara concurrency walaupun support juga untuk parallel
+
+Goroutine adalah thread ringan yg dikelola oleh Go Runtime, ukuran goroutine itu sangat kecil yaitu 2kb
+dibandingkan dengan Thread yang aslinya itu bisa sampai 1mb atau 1000kb
+goroutine hanya bisa berjalan secara concurrency didalam sebuah thread
