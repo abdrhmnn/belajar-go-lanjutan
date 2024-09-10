@@ -4,3 +4,10 @@ mau testing jenis ini itu harus running semuanya frontend, backend, db, other sy
 - Service testing -> Integration test yaitu testing secara langsung integrasi backend, seperti integrasi dengan
 API, db, other system, dll
 - Unit testing -> Testing bagian/scope terkecil dari backend seperti testing controller, service, repository, dll
+
+by default pkg bawaan golang yaitu `testing` itu gak support mekanisme testing assertions
+jadi kudu pakai libray tambahan, contoh nya Testify
+
+untuk jalankan test bisa dengan perintah: `go test -v` untuk run semua unit test di package yang sama
+untuk jalankan salah satu test nya saja `go test -v -run=<namaFungsiUnitTest>`
+untuk jalankan sub test saja `go test -v -run=<namaFungsi>/<namaSubTest>`
