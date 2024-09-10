@@ -1,0 +1,6 @@
+Software testing itu ada 3 jenis :
+- UI testing -> End to End test yaitu testing aplikasi layaknya seperti user (interaksi frontend), jadi kalo
+mau testing jenis ini itu harus running semuanya frontend, backend, db, other system, dll
+- Service testing -> Integration test yaitu testing secara langsung integrasi backend, seperti integrasi dengan
+API, db, other system, dll
+- Unit testing -> Testing bagian/scope terkecil dari backend seperti testing controller, service, repository, dll
