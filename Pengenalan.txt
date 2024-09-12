@@ -15,3 +15,6 @@ di go-lang itu default nya adalah menjalankan program secara concurrency walaupu
 Goroutine adalah thread ringan yg dikelola oleh Go Runtime, ukuran goroutine itu sangat kecil yaitu 2kb
 dibandingkan dengan Thread yang aslinya itu bisa sampai 1mb atau 1000kb
 goroutine hanya bisa berjalan secara concurrency didalam sebuah thread
+
+jadi goroutine itu akan running secara synchronous atau concurrency tetapi bisa juga running secara async
+tergantung banyaknya processor / multicore yang menjalankan sih goroutine nya
