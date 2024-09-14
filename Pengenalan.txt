@@ -18,3 +18,5 @@ goroutine hanya bisa berjalan secara concurrency didalam sebuah thread
 
 jadi goroutine itu akan running secara synchronous atau concurrency tetapi bisa juga running secara async
 tergantung banyaknya processor / multicore yang menjalankan sih goroutine nya
+
+jika ingin mengelola data yang primitif seperti number itu bisa menggunakan pkd `Atomic`
