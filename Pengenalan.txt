@@ -4,3 +4,7 @@ Context biasanya dibuat per request (seperti ada request yg masuk ke server web 
 Context digunakan untuk mempermudah dalam meneruskan value dan sinyal antar proses, seperti meneruskan proses
 dari satu goroutine ke goroutine lainnya, setiap context yang dikirim itu juga akan membawa sinyal, untuk
 memberitahu jika proses context nya dibatalkan atau tidak
+
+Context menganut konsep inheritance oop
+Context bersifat immutable jadi misal nambah data context, menambahkan pengaturan timeout, dll maka akan
+membuat child context baru bukan mengubah context yang sudah ada
