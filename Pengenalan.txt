@@ -1,0 +1,6 @@
+Context merupakan sebuah data yang membawa value, sinyal cancel, sinyal timeout dan sinyal deadline
+
+Context biasanya dibuat per request (seperti ada request yg masuk ke server web melalui http request)
+Context digunakan untuk mempermudah dalam meneruskan value dan sinyal antar proses, seperti meneruskan proses
+dari satu goroutine ke goroutine lainnya, setiap context yang dikirim itu juga akan membawa sinyal, untuk
+memberitahu jika proses context nya dibatalkan atau tidak
