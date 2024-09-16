@@ -1,0 +1,4 @@
+JSON Object di go-lang itu direpresentasikan dengan tipe data struct
+Dimana setiap attribute di JSON Object merupakan attribute di struct
+
+JSON Array di go-lang itu direpresentasikan dengan tipe data slice
