@@ -1,0 +1,4 @@
+log file berisikan informasi kejadian dari sebuah sistem
+biasanya didalam log file terdapat waktu dan pesan kejadian
+
+logging adalah aksi menambahkan informasi log ke log file (bisa juga ke db, atau ke tempat yg lain)
