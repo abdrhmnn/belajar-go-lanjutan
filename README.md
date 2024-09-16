@@ -9,3 +9,4 @@ Untuk list resource belajar itu dibagi berdasarkan branch, untuk detail nya
 | 3. | go-unit-test | Belajar unit testing menggunakan go-lang
 | 4. | go-context | Belajar mempergunakan context di go-lang
 | 5. | go-json | Belajar mempergunakan package json untuk encoding dan decoding json terhadap data di go-lang
+| 6. | go-logging | Belajar membuat logging dengan go-lang
