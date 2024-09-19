@@ -1,0 +1,9 @@
+time="2024-09-19T10:32:31+07:00" level=info msg="Hello!"
+time="2024-09-19T10:32:31+07:00" level=warning msg=Test
+time="2024-09-19T10:32:31+07:00" level=error msg=Test
+time="2024-09-19T10:33:08+07:00" level=info msg="Hello!"
+time="2024-09-19T10:33:08+07:00" level=warning msg="Hello!"
+time="2024-09-19T10:33:08+07:00" level=error msg="Hello!"
+{"level":"info","msg":"Hello!","time":"2024-09-19T10:36:50+07:00"}
+{"level":"warning","msg":"Hello!","time":"2024-09-19T10:36:50+07:00"}
+{"level":"error","msg":"Hello!","time":"2024-09-19T10:36:50+07:00"}
