@@ -9,7 +9,7 @@ import (
 
 func GetConnection() *sql.DB {
 	// Open ini adalah database pooling yaitu management koneksi database
-	db, err := sql.Open("mysql", "root:@tcp(localhost:3306)/abdu")
+	db, err := sql.Open("mysql", "root:@tcp(localhost:3306)/abdu?parseTime=true")
 	if err != nil {
 		panic(err)
 	}
