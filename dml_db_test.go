@@ -132,8 +132,8 @@ func TestQueryWithPrepareStatement(t *testing.T) {
 		birth_date := "2000-10-23"
 		married := true
 
-		result, _ := statement.ExecContext(ctx, eunha, age, email, rating, birth_date, married)
 		time.Sleep(1 * time.Second)
+		result, _ := statement.ExecContext(ctx, eunha, age, email, rating, birth_date, married)
 		id, _ := result.LastInsertId()
 
 		fmt.Println("Data id: ", id)
