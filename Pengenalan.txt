@@ -1,0 +1,10 @@
+Embed adalah membaca isi file serta memasukkan isi file nya secara otomatis ke dalam sebuah variabel
+nantinya variabel tersebut berisi isi file secara otomatis pada saat compile time
+
+variabel nya kudu harus dibuat diluar function atau dalam package nya
+
+cara embed di golang itu hanya tinggal berikan komentar diatas nama variabel nya
+
+embed di golang itu hanya bisa untuk tipe data string dan []Byte
+string biasanya untuk embed file: .txt, .json, .xml, dll
+[]Byte biasanya untuk embed: gambar, video, audio, dll
