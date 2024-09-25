@@ -8,3 +8,6 @@ cara embed di golang itu hanya tinggal berikan komentar diatas nama variabel nya
 embed di golang itu hanya bisa untuk tipe data string dan []Byte
 string biasanya untuk embed file: .txt, .json, .xml, dll
 []Byte biasanya untuk embed: gambar, video, audio, dll
+
+Setelah program golang di compile maka ituh akan menload/menyimpan file embed ke dalam binary hasil compilasi
+jadi walaupun file embed di ubah/hapus/dll ituh tidak akan mempengaruhi hasil binary nya
