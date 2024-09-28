@@ -37,3 +37,50 @@ func TestHandlerRequest(t *testing.T) {
 		panic(err)
 	}
 }
+
+// ServeMux / router
+func TestServerMux(t *testing.T) {
+	mux := http.NewServeMux()
+	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "Route home!")
+	})
+	mux.HandleFunc("/about", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "Route about!")
+	})
+	mux.HandleFunc("/profile/", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "Route profile!")
+	})
+	mux.HandleFunc("/profile/detail/", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "Route detail profile!")
+	})
+
+	server := http.Server{
+		Addr:    "localhost:8080",
+		Handler: mux,
+	}
+
+	fmt.Println("server is running!")
+	err := server.ListenAndServe()
+	if err != nil {
+		panic(err)
+	}
+}
+
+// get request
+func TestRequest(t *testing.T) {
+	var handler http.HandlerFunc = func(respon http.ResponseWriter, request *http.Request) {
+		fmt.Fprint(respon, request.Method)
+		fmt.Fprint(respon, request.RequestURI)
+	}
+
+	server := http.Server{
+		Addr:    "localhost:8080",
+		Handler: handler,
+	}
+
+	fmt.Println("server is running!")
+	err := server.ListenAndServe()
+	if err != nil {
+		panic(err)
+	}
+}
